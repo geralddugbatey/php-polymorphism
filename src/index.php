@@ -9,6 +9,8 @@ require_once __DIR__.'/dbclasses/addAmount.php';
 require_once __DIR__.'/dbclasses/getAmount.php';
 require_once __DIR__.'/routeclass/amountCalculation.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 $router = new Router();
 
